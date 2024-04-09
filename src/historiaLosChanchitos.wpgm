@@ -1,0 +1,25 @@
+import elLoboFeroz.*
+
+program losChanchitos {
+
+/*Representar la historia (incompleta) de los chanchitos:
+ * El lobo sopla primero la casa de paja, donde hay un
+ * chanchito, la hace caer y el chanchito huye a la casa
+ * de madera donde estaba el otro chanchito. El lobo corre
+ * hasta la casa de madera, la sopla y también la tumba,
+ * por lo que ambos chanchitos huyen. ¿Cómo termina la
+ * historia? ¿Se come a alguno de los chanchitos?
+ */
+ 
+ 	feroz.soplar(casaDePaja)
+ 	casaDeMadera.variarOcupantes(1)
+ 	feroz.correr()
+ 	feroz.soplar(casaDeMadera)
+ 	casaDeLadrillos.variarOcupantes(2)
+ 	feroz.soplar(casaDeLadrillos)
+ 	feroz.comer(chanchito)
+ 	feroz.comer(chanchito)
+ 	feroz.comer(chanchito)
+	console.println(feroz.saludable())
+
+}
